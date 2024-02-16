@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quantum-game-2
+  name: quantum-game
   labels:
-    app: quantum-game-2
+    app: quantum-game
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quantum-game-2
+      app: quantum-game
   template:
     metadata:
       labels:
-        app: quantum-game-2
+        app: quantum-game
     spec:
       containers:
-      - name: quantum-game-2
-        image: spkane/quantum-game-2:latest
+      - name: quantum-game
+        image: spkane/quantum-game:latest
         ports:
         - containerPort: 8080
-
