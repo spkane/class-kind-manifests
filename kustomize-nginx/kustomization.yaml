@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: ingress-nginx
 
 resources:
-  - https://github.com/kubernetes/ingress-nginx//deploy/static/provider/kind?ref=release-1.10
+  - https://github.com/kubernetes/ingress-nginx//deploy/static/provider/kind?ref=controller-v1.12.1
